@@ -28,6 +28,9 @@
     make
     sudo make install
     ```
+<img width="755" height="213" alt="yosys install" src="https://github.com/user-attachments/assets/e9a8ce0b-0c93-4d31-a0ab-b75c6f5474e0" />
+
+
 
   ### 2. Icarus Verilog (iverilog)
 
