@@ -41,6 +41,11 @@
     sudo apt-get install iverilog
     ```
 
+<img width="815" height="617" alt="iverilog install" src="https://github.com/user-attachments/assets/aca7dd11-5a22-482e-8fc0-47405d713aa2" />
+
+
+
+
   ### 3. GTKWave
 
   - [Official Documentation](https://gtkwave.sourceforge.net/gtkwave.pdf)
@@ -49,6 +54,11 @@
     sudo apt-get update
     sudo apt install gtkwave
     ```
+
+    
+<img width="815" height="105" alt="gtkwave install" src="https://github.com/user-attachments/assets/348f8c0b-f467-4d57-ac3f-f6180e3c9025" />
+
+
 
   ### 4. OpenSTA
 
@@ -89,6 +99,10 @@
     sudo make install
     ```
 
+    
+<img width="815" height="225" alt="ngspice install" src="https://github.com/user-attachments/assets/126f7829-57cc-441d-9187-21a176ca7f08" />
+
+
   ### 6. Magic VLSI
 
   - [Official Documentation](http://opencircuitdesign.com/magic/)
@@ -101,6 +115,10 @@
     make
     sudo make install
     ```
+
+    
+<img width="1727" height="915" alt="magic install" src="https://github.com/user-attachments/assets/ab376b42-b369-4297-bce7-d8886c011447" />
+    
 
   ### 7. OpenLane
 
@@ -135,6 +153,10 @@
     # Optional: view test outputs
     make mount
     ```
+    
+<img width="1727" height="915" alt="OpenLane install" src="https://github.com/user-attachments/assets/ac2b4e41-d031-49fe-8573-6f56aac2a3f4" />
+
+    
 
   ## License
 
