@@ -157,8 +157,8 @@
      -l $PDK_ROOT/sky130A/libs.tech/klayout/tech/sky130A.lyp \
      ./designs/spm/runs/openlane_test/results/final/gds/spm.gds
 
-# Leave the Docker
-exit
+    # Leave the Docker  
+    exit
     ```
     
 <img width="1727" height="915" alt="OpenLane install" src="https://github.com/user-attachments/assets/ac2b4e41-d031-49fe-8573-6f56aac2a3f4" />
