@@ -213,6 +213,13 @@ gtkwave tb_good_mux.vcd
     Compiling generates a.out.
 
     Executing ./a.out creates a .vcd file for waveform viewing with GTKWave.
+    
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/c269bc8b-6174-44e6-ab8c-4d9fdd25299d" />
+
+<img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/d590f99f-866f-4cc4-a51c-b5b1305491d6" />
+
+
+
 
 </details>
 
