@@ -165,6 +165,9 @@
 </details>
 
 <details> <summary><h2>Week 1</h2></summary>
+
+Day 1
+  
 Introduction
 
 This section presents the foundational concepts used in RTL design and simulation, focusing on Verilog workflows and tool usage.
@@ -218,6 +221,81 @@ gtkwave tb_good_mux.vcd
 
 <img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/d590f99f-866f-4cc4-a51c-b5b1305491d6" />
 
+
+Day 2
+
+Introduction to .lib Library Files
+
+When examining a .lib (library) file, three key parameters must be checked:
+
+    P (Process): Captures process-related variations during fabrication.
+
+    V (Voltage): Captures supply voltage variations.
+
+    T (Temperature): Captures operational temperature variations.
+
+Hierarchical vs. Flat Synthesis
+
+    Hierarchical Synthesis: Useful for designs with repeated modules, enabling a divide-and-conquer strategy—commonly applied in large-scale projects.
+
+    Flat Synthesis: Combines all hierarchy into a single-level netlist, which can simplify optimization across the design.
+
+Flattening a design in Yosys:
+
+bash
+flatten
+write_verilog -noattr multiple_modules_flat.v
+
+Design Considerations
+
+    Avoid stacked PMOS transistors in certain design practices.
+
+    Explore concepts such as logical effort for timing optimization.
+
+Module-Level Synthesis
+
+    Recommended when a design includes multiple instances of the same module.
+
+    Supports divide-and-conquer strategies for massive projects.
+
+Flip-Flop Coding Styles and Optimization
+
+    Be mindful of glitches in flip-flops.
+
+    Distinguish between synchronous and asynchronous (sync/async) resets in flip-flop design.
+
+
+
+Day 3
+
+Introduction to Optimizations
+
+This section covers practical techniques to optimize both combinational and sequential logic in digital designs.
+Combinational Logic Optimization
+
+    The goal is to reduce area and power while maximizing performance.
+
+    Typical methods include:
+
+        Constant propagation: Replacing parts of the circuit with constant values where possible.
+
+        Direct optimization: Simplifying logic expressions.
+
+        Boolean logic optimization: Using algebraic methods to reduce gate count and complexity.
+
+Sequential Logic Optimization
+
+    Focuses on refining circuits that store and manage state.
+
+    Optimization strategies include:
+
+        Sequential constant propagation: Propagating known values through sequential elements.
+
+        State optimization: Minimizing the number of states in state machines.
+
+        Retiming: Moving registers across logic to improve timing without changing behavior.
+
+        Sequential logic cloning (floorplan-aware synthesis): Duplicating logic where advantageous for parallelism and timing.
 
 
 
