@@ -162,7 +162,7 @@
     ```
     
 <img width="1727" height="915" alt="OpenLane install" src="https://github.com/user-attachments/assets/ac2b4e41-d031-49fe-8573-6f56aac2a3f4" />
-
+</details>
 
 <details> <summary><h2>Week 1</h2></summary>
 Introduction
