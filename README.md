@@ -163,6 +163,59 @@
     
 <img width="1727" height="915" alt="OpenLane install" src="https://github.com/user-attachments/assets/ac2b4e41-d031-49fe-8573-6f56aac2a3f4" />
 
+
+<details> <summary><h2>Week 1</h2></summary>
+Introduction
+
+This section presents the foundational concepts used in RTL design and simulation, focusing on Verilog workflows and tool usage.
+Simulator
+
+    The RTL design is simulated to check adherence to specifications.
+
+    A simulator is used for this purpose.
+
+    Icarus Verilog (iverilog) is the chosen tool for this workshop.
+
+Design
+
+    Design refers to the Verilog code that implements the intended functionality based on the given specifications.
+
+Testbench
+
+    The testbench applies stimulus (test vectors) to the design, verifying its operation.
+
+How the Simulator Works
+
+    The simulator monitors changes in the input signals.
+
+    When an input changes, outputs are re-evaluated.
+
+    No change in the input means outputs remain unchanged.
+
+Repository Structure and Usage
+
+Clone the official workshop repository:
+
+bash
+git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+
+    The repository includes standard cell libraries and all Verilog modules used in the workshop.
+
+    Inside the verilog_files directory, Verilog modules are paired with corresponding testbench files.
+
+To run an example module:
+
+bash
+iverilog good_mux.v tb_good_mux.v
+./a.out
+gtkwave tb_good_mux.vcd
+
+    Compiling generates a.out.
+
+    Executing ./a.out creates a .vcd file for waveform viewing with GTKWave.
+
+</details>
+
     
 
   ## License
