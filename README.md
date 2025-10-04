@@ -303,13 +303,120 @@ Sequential Logic Optimization
 
     
 
-  ## License
-
-  Refer to individual tool documentation for licensing details.
 
 </details>
 
 <details> <summary><h2>Week 2</h2></summary>
 
+## Sources
+
+The following content is compiled from these sources:
+
+*   [Ansys Blog: What is a System on a Chip (SoC)?](https://www.ansys.com/en-gb/blog/what-is-system-on-a-chip)
+    
+*   [Synopsys Blog: System-on-Chip Design](https://www.synopsys.com/blogs/chip-design/system-on-chip-design.html)
+    
+*   [Synopsys Blog: System on Chip](https://www.synopsys.com/blogs/chip-design/system-on-chip.html)
+    
+
+* * *
+
+# System on Chip (SoC): Comprehensive Guide
+
+In electronics, the name of the game is "more performance, less power, and less space." Especially in portable devices such as tablets and smartphones, massively complex technology must fit within the smallest possible footprint and use the least amount of power. To create devices that are both fast and small, engineers consolidate all necessary components into a single package, called a system on a chip (SoC).
+
+## What is a System on Chip?
+
+A system on a chip is an integrated circuit that compresses all of a system's required components onto one piece of silicon. By eliminating separate and large system components, SoCs simplify circuit board design, resulting in improved power and speed without compromising system functionality. Generally, SoCs include:
+
+*   **Multiple Cores**: Processors in the form of microcontrollers, microprocessors, digital signal processors, or application-specific instruction set processors
+    
+*   **Memory Capabilities**: RAM, ROM, FLASH, EEPROM, and/or cache memory
+    
+*   **External Interfaces**: Wired communication protocols such as HDMI, USB4, FireWire, USART, SPI, I²C, or Ethernet
+    
+*   **Wireless Capabilities**: WiFi, Bluetooth, and other radio frequency capabilities
+    
+*   **GPU**: Graphical Processing Unit for accelerating specific tasks
+    
+*   **Voltage Regulation**: Voltage regulators, phase lock loop (PLL) control systems, built-in oscillators, timers, and analog-to-digital (ADC) converters
+    
+*   **Intrachip Communication**: Interface busses or networks-on-chip (NoC) for connecting individual circuit blocks
+    
+*   **Signal Processing**: Digital, analog, and mixed-signal processing circuit blocks
+    
+
+Compact SoCs have become indispensable solutions spanning from wired applications like data centers, artificial intelligence (AI), and high-performance computing (HPC) to battery-operated devices like mobile phones and wearables.
+
+## SoC Design: Pros and Cons
+
+## Advantages
+
+*   **Space optimization**: Smaller device designs possible
+    
+*   **Power efficiency**: Significant reduction in power consumption
+    
+*   **Cost-effective**: Single SoC cheaper than multiple separate chips
+    
+*   **Reliability**: Fewer connections increase system reliability
+    
+*   **Performance**: On-chip signals achieve higher performance and speed
+    
+
+## Disadvantages
+
+*   **Single point of failure**: Component failure affects entire system and limits upgrades
+    
+*   **Time to market**: Custom SoCs require specialized expertise, tools, and increased development time
+    
+*   **Mixed analog/digital**: Single process technology limits analog performance optimization
+    
+*   **Flexibility**: Limited scope for applications beyond intended task
+    
+
+## System on a Chip Design Flow
+
+The SoC design workflow involves several collaborative stages:
+
+1.  **Specification**: Define desired function, applications, performance goals, and power limitations
+    
+2.  **Logical design**: Describe behavior in hardware description language (HDL) and simulate functionality
+    
+3.  **Logic synthesis**: Translate HDL description into transistor elements and interconnections (netlist)
+    
+4.  **Physical design**: Determine transistor locations and interconnection wire trajectories
+    
+5.  **Signoff**: Analyze and validate design using verification software to ensure functionality and manufacturability
+    
+6.  **Tapeout**: Generate final graphic files for photomasks and send to manufacturer
+    
+7.  **Testing and packaging**: Confirm specifications and encapsulate in protective package
+    
+
+## Integration Within SoC Architecture
+
+## Processor Cores
+
+SoCs typically contain multiple processor cores using RISC instruction set architecture for reduced digital logic, power consumption, and area. ARM architectures are commonly used as available IP cores.
+
+## Memory Blocks
+
+Critical memory components include ROM, RAM, EEPROM, and flash memory. Cache hierarchies use SRAM for processor registers and DRAM for main memory.
+
+## External Interfaces
+
+Communication protocols include USB, FireWire, USART, SPI, Ethernet, HDMI, I2C, and wireless networking protocols like Bluetooth, Wi-Fi, and RFID.
+
+## Supporting Circuitry
+
+Essential functionality components include voltage regulators, power management circuits, phase-locked loop control systems, clocks, timers, oscillators, and analog-to-digital converters.
+
+## SoC Inter-Module Communication Designs
+
+Traditional data bus architectures like ARM's Advanced Microcontroller Bus Architecture (AMBA) have limited scalability, supporting only tens of cores. Wire delay scaling issues and increased power consumption have led to network-on-chip (NoC) technology adoption.
+
+NoC technology offers application-specific routing, improved power efficiency, and reduced bus contention. Modern NoC architectures utilize distributed computing network topologies such as torus, hypercube, mesh, and tree networks to efficiently meet SoC power and throughput requirements.
+
+1.  [https://www.ansys.com/en-gb/blog/what-is-system-on-a-chip](https://www.ansys.com/en-gb/blog/what-is-system-on-a-chip)
 
 </details>
