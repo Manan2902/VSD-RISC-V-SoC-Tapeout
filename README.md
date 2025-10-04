@@ -1,7 +1,7 @@
 # VSD-RISC-V-SoC-Tapeout
 
 <details>
-  <summary>Week 0</summary>
+  <summary><h2>Week 0</h2></summary>
 
   # Hardware Design Environment Setup
 
