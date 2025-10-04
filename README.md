@@ -308,3 +308,8 @@ Sequential Logic Optimization
   Refer to individual tool documentation for licensing details.
 
 </details>
+
+<details> <summary><h2>Week 2</h2></summary>
+
+
+</details>
